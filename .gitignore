@@ -1,0 +1,10 @@
+# Environment files
+.env
+.secrets.toml
+
+# Streamlit secrets (local only)
+.streamlit/secrets.toml
+
+# Virtual environment folders
+venv/
+my_env_td*/
