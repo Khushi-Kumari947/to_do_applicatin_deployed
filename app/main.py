@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel,EmailStr
 from bson import ObjectId
 from .database import users_collection, todos_collection
 from passlib.context import CryptContext
@@ -9,7 +9,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # Models
 class User(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 class Todo(BaseModel):

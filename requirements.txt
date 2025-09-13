@@ -6,3 +6,4 @@ python-dotenv==1.0.0
 passlib[bcrypt]==1.7.4
 streamlit==1.29.0
 requests==2.32.1
+pydantic[email]
